@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <div class="main_container">
+    <main>
       <AppHeader/>
       <section>
       <router-view />
       </section>
     <AppFooter/>
-    </div>
+    </main>
   </v-app>
 </template>
 
@@ -31,7 +31,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.main_container{
+main{
   display: grid !important;
   grid-auto-rows: 0.2fr 3fr 0.3fr ;
   grid-gap: 5px;

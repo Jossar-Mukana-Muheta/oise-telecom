@@ -26,8 +26,9 @@
     </v-navigation-drawer>
     <v-app-bar
         prominent
-        height="80px"
-        class="align-center justify-space-around"
+        height="100px"
+        dense
+        class="align-center"
 
 
 
@@ -41,9 +42,9 @@
 
       <v-toolbar-title class="align-self-center">Oise <span style="color:#FA2021">Télécom</span></v-toolbar-title>
 
-
+      <v-spacer></v-spacer>
       <div>
-        <v-btn  depressed class="hidden-sm-and-down" text v-for="(navItem, elt) in drawerItems" :key="elt"
+        <v-btn  depressed class="hidden-sm-and-down mt-8" text v-for="(navItem, elt) in drawerItems" :key="elt"
         >
           <router-link :to="navItem.link">
             {{ navItem.name }}
@@ -68,7 +69,7 @@ export default {
         {name: "Accueil", link: "/"},
         {name: "Nos boutiques", link: "/Boutiques"},
         {name: "Services", link: "/Services"},
-        {name: "Reconditionner", link: "/Reconditionner"},
+        {name: "Reconditionné", link: "/Reconditionné"},
         {name: "Contact", link: "/Contact"}
       ]
     }
@@ -89,5 +90,7 @@ a{
     transform: scale(1.1);
   }
 }
+
+
 
 </style>
